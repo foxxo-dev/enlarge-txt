@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enlarge Text</title>
-</head>
-<body>
-    
-</body>
-<script src="index.js"></script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #212225;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        min-height: 100vh;
+        margin: 0;
+      }
+      div {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+      body div {
+        background: #fff;
+        padding: 20px;
+        border-radius: 4px;
+        display: flex;
+      }
+      #enlrg-txt-out, h1{
+        color: #fff;
+        font-weight: bolder;
+        font-size: 10rem;
+        max-width: 90vw;
+        line-height: 0.9;
+      }
+      h1{
+        font-size: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enlarge The Text!</h1>
+    <div>
+      <input placeholder="Text to Enlarge" type="text" id="enlrg-txt-in" maxlength="108" />
+      <button id="enlrg-btn" style="max-width: 20%; ">Enlarge</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
