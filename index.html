@@ -41,29 +41,35 @@
         box-sizing: border-box;
         cursor: pointer;
       }
-      body div {
+      body div.input-group {
         background: #fff;
         padding: 20px;
         border-radius: 4px;
         display: flex;
       }
-      #enlrg-txt-out, h1{
+      #enlrg-txt-out,
+      h1 {
         color: #fff;
         font-weight: bolder;
         font-size: 10rem;
         max-width: 90vw;
         line-height: 0.9;
       }
-      h1{
+      h1 {
         font-size: 5rem;
       }
     </style>
   </head>
   <body>
     <h1>Enlarge The Text!</h1>
-    <div>
-      <input placeholder="Text to Enlarge" type="text" id="enlrg-txt-in" maxlength="108" />
-      <button id="enlrg-btn" style="max-width: 20%; ">Enlarge</button>
+    <div class="input-group">
+      <input
+        placeholder="Text to Enlarge"
+        type="text"
+        id="enlrg-txt-in"
+        maxlength="108"
+      />
+      <button id="enlrg-btn" style="max-width: 20%">Enlarge</button>
     </div>
   </body>
   <script src="index.js"></script>
